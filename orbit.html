@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Orbit Slide Foundation</title>
+	<link rel="stylesheet" type="text/css" href="/Framework20Foundation/css/foundation.min.css"/>
+</head>
+<body>
+	<div class="orbit-container">
+		<ul data-orbit class="example-orbit orbit-slides-container">
+			<li>
+				<img src="../assets/img/examples/satelite-orbit.jpg" alt="slide 1" />
+				<div class="orbit-caption">
+					Caption One.
+				</div>
+			</li>
+			<li class="active">
+				<img src="../assets/img/examples/andromeda-orbit.jpg" alt="slide 1" />
+				<div class="orbit-caption">
+					Caption Two.
+				</div>
+			</li>
+			<li>
+				<img src="../assets/img/examples/launch-orbit.jpg" alt="slide 1" />
+				<div class="orbit-caption">
+					Caption Three.
+				</div>
+			</li>
+		</ul>
+
+		<!-- Navigation Arrows -->
+		<a href="#" class="orbit-prev">Prev <span></span></a>
+		<a href="#" class="orbit-next">Next <span></span></a>
+
+		<!-- Slide Numbers -->
+		<div class="orbit-slide-number">
+			<span>1</span> of <span>3</span>
+		</div>
+
+		<!-- Timer and Play/Pause Button -->
+		<div class="orbit-timer">
+			<span></span>
+			<div class="orbit-progress"></div>
+		</div>
+	</div>
+
+	<!-- Bullets -->
+	<ol class="orbit-bullets">
+		<li data-orbit-slide-number="1"></li>
+		<li data-orbit-slide-number="2" class="active"></li>
+		<li data-orbit-slide-number="3"></li>
+	</ol>
+
+	<script>
+		$(document).ready(function(){
+
+			$(document).foundation({
+				orbit: {
+					animation: 'fade',
+					timer: true,
+					timer_speed: 2000,
+					timer_paused_class: 'slider-pause',
+					slide_number: true,
+					pause_on_hover: false,
+					animation_speed: 1000,
+					navigation_arrows: true,
+					variable_height: false,
+					bullets: false
+				}
+			});
+
+			$(".orbit-timer").click();
+
+			$('#play').on('click', function(){
+				$("#featured").siblings(".slider-pause").click();
+			});
+
+			$("#pause").click(function() {
+				$("#featured").siblings(".orbit-timer").click();
+			});
+
+		});
+	</script>
+
+
+</body>
+</html>
