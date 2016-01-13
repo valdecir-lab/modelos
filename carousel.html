@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>CAROUSEL</title>
+	<link rel="stylesheet" href="css/Normalize.css">
+	<link rel="stylesheet" href="css/normalize.css">
+	<script type="text/javascript" rel="javascript" href="js/jquery-2.1.4.js"></script>
+
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+	<header>
+		<div id="myCarousel" class="carousel slide" data-ride="carousel">
+			<ol class="carousel-indicators">
+				<li data-target="#myCarousel" data-selide-to="0" class="active"></li>
+				<li data-target="#myCarousel" data-selide-to="1"></li>
+				<li data-target="#myCarousel" data-selide-to="2"></li>
+			</ol>
+
+			<div class="carousel-inner" role="listbox">
+				<div class="item">
+					<img class="first-slide" src="http://localhost/vitaclin/wp-content/themes/quality/images/slider/slide.jpg" alt="First slide">
+					<div class="container">
+						<div class="carousel-caption">
+							<h1>Atendimento Humanizado.</h1>
+							<p lingdex="0"> <code>FRASE DE EFEITO</code>.</p>
+						</div>
+					</div>
+				</div>
+				<div class="item">
+					<img class="second-slide" src="http://localhost/vitaclin/wp-content/themes/quality/images/slider/slide02.png" alt="Second slide">
+					<div class="container">
+						<div class="carousel-caption">
+							<h1>Moderna clínica.</h1>
+							<p lingdex="2"> Slogan da clínica.</p>
+						</div>
+					</div>
+				</div>
+				<div class="item active">
+					<img class="third-slide" src="http://localhost/vitaclin/wp-content/themes/quality/images/slider/slide03.png" width="1600" height="600" alt="Third slide">
+					<div class="container">
+						<div class="carousel-caption">
+							<h1>Equipe especializada.</h1>
+							<p lingdex="4">Compromisso com a saúde.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+				<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+				<span class="sr-only">Anterior</span>
+			</a>
+			<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+				<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+				<span class="sr-only">Próximo</span>
+			</a>
+
+		</div>
+
+	</header>
+	
+	<nav>
+		<div>
+			<ul class="list-inline col-sm-12">
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Produto</a></li>
+				<li><a href="#">Serviços</a></li>
+				<li><a href="#">Portifólio</a></li>
+				<li><a href="#">Sobre!</a></li>
+			</ul>
+		</div>
+	</nav>
+
+	<div class="container">
+
+		<section>
+			<div class="row">
+				<div></div>
+			</div>
+		</section>
+
+		<article>Artigo</article>
+
+		<aside>Aside / Sidebar</aside>
+
+	</div>
+
+
+	<div id="map">
+		<script type="text/javascript">
+			var map;
+			function initMap() {
+				map = new google.maps.Map(document.getElementById('map'), {
+					center: {lat: -22.813369, lng: -45.193535},
+					zoom: 17
+				});
+			}
+		</script>
+
+		<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBfPlXsF1oxwyBUbyzOzB2ORH2PZANKzfY&callback=initMap"></script>
+		<!-- 4F Lab -22.813369, -45.193535 -->
+
+	</div>
+
+	<hr>
+
+	<footer>
+		<div class="col-lg-12">
+			<h3>Rodapé</h3>
+			<p>Copyright 4F Lab - 2015</p>
+		</div>
+	</footer>
+
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script src="js/bootstrap.min.js"></script>
+
+</body>
+</html>
