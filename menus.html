@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Menus exemplos</title>
+	<!-- ESTILO PRÓPRIO -->
+	<link rel="stylesheet" type="text/css" href="css/style-menus.css">
+	<!-- Utilizaremos o Normalize.css (http: //necolas.github.io/normalize.css/) como um estilo de base, para garantir uma consistência melhor entre navegadores diferentes. -->
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<!-- o -prefix-free(http: //leaverou.github.io/prefixfree/), que será responsável por tratar os prefixos proprietários para as propriedades de CSS3 que ainda não se tornaram um padrão entre navegadores -->
+	<script src="js/prefixfree.min.js"></script>
+	<!-- Estilo animação "ANIMATE" galeria pronto de animação css-->
+	<link rel="stylesheet" type="text/css" href="/css/animate.css"/>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+</head>
+<body>
+
+	<nav>
+		<div id="nav" class="menu animate bouceInDown">
+			<ul>
+				<li class="menu animated jello"><a href="#">Home</a></li>
+				<li><a href="#">Serviços</a></li>
+				<li><a href="#">Trabalhos</a></li>
+				<li><a href="#">Contato</a></li>
+			</ul>
+		</div>
+	</nav>
+
+	<section>
+		<div class="secao">
+			<div id="secao1">
+				<a href="http://pt-br.learnlayout.com/" target="_blank">Referencia de posicionamento</a><span> dos elementos das páginas <em>html</em>.</span>
+			</div>
+			<div id="secao2">parte 02</div>
+			<div id="secao3">Paret 03</div>
+		</div>
+	</section>
+
+	<article>
+		<div>
+			<div><p>Artigo 01</p></div>
+			<div><p>Artigo 02</p></div>
+			<div><p>Artigo 03</p></div>
+		</div>
+	</article>
+
+	<footer>
+		<div id="rodape">
+			<div>
+				<p>Contato</p>
+				<p>dicir&#64;dicir.com.br</p>
+				<p><a href="https://www.ime.usp.br/~glauber/html/acentos.htm" target="_blank">Tabela de referências a caracteres especiais.</a></p>
+			</div>
+			<div><span>&copy; Copyrigth 2015 <strong>4f Lab</strong> &reg;</span></div>
+			<div>
+				<ul>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ul>
+			</div>
+		</div>
+	</footer>
+	
+
+	
+
+	<script>
+		$('#nav li').on('click', function() {
+			$(this).addClass('animated jello');
+		});
+	</script>
+</body>
+</html>
